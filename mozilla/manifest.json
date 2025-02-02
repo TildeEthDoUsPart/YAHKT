@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "YAKHT: Yet Another Kinda Hideous Theme",
+    "version": "1.1",
+    "description": "Returns the intranet to its former colors.",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://intra.forge.epita.fr/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "icons": {
+        "48": "icon-48.png",
+        "16": "icon-48.png",
+        "128": "icon-48.png"
+    },
+    "applications": {
+        "gecko": {
+            "id": "yakht@myaddon.com"
+        }
+    }
+}
+

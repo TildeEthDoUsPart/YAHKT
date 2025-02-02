@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "YAKHT: Yet Another Kinda Hideous Theme",
+    "version": "1.1",
+    "description": "Returns the intranet to its former colors.",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": [
+        "*://intra.forge.epita.fr/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "rules.json"
+        }]
+    },
+    "icons": {
+    	"48": "icon-48.png",
+    	"16": "icon-48.png",
+    	"128": "icon-48.png"
+    }
+}
+
